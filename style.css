@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color:antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+}
+.heading{
+    height: 45px;
+    background-color: #081b31;
+    color: aquamarine;
+    padding-top: 5px;
+}
+.heading p{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 5px;
+    word-spacing: 15px;
+}
+
+.main_container{
+    /* background-color:antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+     /* height: calc(100% - 50px); */
+}
+.img_cont{
+    width: 50%;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 10px;
+    gap: 3 rem;
+}
+.img_cont .name{
+    text-align: center;
+    color: #081b31;
+    font-size: 22px;
+}
+
+
+.choice{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+.choice:hover{
+    background-color:  #081b31;
+    color:rgb(133, 0, 0);
+}
+
+
+img{
+    height: 160px;
+    width: 160px;
+    object-fit:cover;
+    border-radius: 50%;
+    width: 100%;
+}
+.score-card{
+    margin-top: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5rem;
+
+}
+.score{
+    /* background-color: blueviolet; */
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: #081b31;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.score .card p{
+    color: aquamarine;
+    font-size: 50px;
+
+}
+
+.player{
+    margin-top: 10px;
+    color:#081b31;
+    font-size: 20px;
+    /* text-align: center; */
+}
+.result {
+    /* background-color: brown; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 60px;
+}
+.result p{
+    padding: 10px;
+    width: max-content;
+    background-color: #081b31;
+    text-align: center;
+    font-size: 25px;
+    border-radius: .5rem;
+    color: aquamarine
+}
+
+@media (max-width:600px) {
+    .heading p{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+
+    .img_cont{
+        margin-top: 30px;
+        width: 50%;
+        display: flex;
+        justify-content:center;
+        padding: 10px;
+        gap: 1rem;
+    }
+    .choice{
+        height: 90px;
+        width: 90px;
+        padding: 2px;
+    }
+
+    img{
+        height: 90px;
+        width: 90px;
+    }
+
+    .score-card{
+    gap: 1rem;
+    
+    }
+    .score{
+        /* background-color: blueviolet; */
+        height: 90px;
+        width: 90px;
+    }
+
+    .score .card p{
+        color: aquamarine;
+        font-size: 32px;
+    
+    }
+    .player{
+        font-size: 17px;
+        /* text-align: center; */
+    }
+    
+    .result p{
+        font-size: 20px;
+    }
+    
+}
